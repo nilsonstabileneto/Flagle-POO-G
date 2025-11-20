@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="15" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Welcome to Flagle" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="10">
+        <Label text="Nome:" style="-fx-font-size: 14px;"/>
+        <TextField fx:id="campoNome" promptText="Digite seu nome" prefWidth="200"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Email:" style="-fx-font-size: 14px;"/>
+        <TextField fx:id="campoEmail" promptText="Digite seu email" prefWidth="200"/>
+    </HBox>
+
+    <Button text="Cadastrar" onAction="#cadastrarClicado" style="-fx-font-size: 14px; -fx-background-color: #007bff; -fx-text-fill: white;" prefWidth="100"/>
+
+    <Label fx:id="labelMensagem" style="-fx-font-size: 14px; -fx-text-fill: green;" wrapText="true"/>
+</VBox>
