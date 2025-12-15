@@ -1,5 +1,6 @@
 package com.example.flagle;
 
+
 import javafx.animation.*;
 import javafx.application.Application;
 import javafx.geometry.Insets;
